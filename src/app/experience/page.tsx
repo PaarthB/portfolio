@@ -25,7 +25,7 @@ export default function Experience() {
 
         <ol className="relative border-s border-gray-200 dark:border-gray-700">                  
         <li className="mb-10 ms-6">            
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-50 rounded-full -start-3 ring-8 ring-white">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full -start-3 ring-8 ring-white">
             <svg className="fill-[#6fe3d0]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228.35 105.4">
                 {/* <defs>
                 <style>.cls-1{fill:#6fe3d0;}
@@ -57,7 +57,7 @@ export default function Experience() {
         </li>
 
         <li className="mb-10 ms-6">            
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-50 rounded-full -start-3 ring-8 ring-white">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full -start-3 ring-8 ring-white">
                 <svg width="40px" height="40px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
                     <defs>
                         <linearGradient x1="99.6865531%" y1="15.8007988%" x2="39.8359011%" y2="97.4378355%" id="linearGradient-1">
@@ -91,6 +91,9 @@ export default function Experience() {
                 </li>
                 <li className="pb-1.5">
                     Developed a user interface (UI) used for monitoring, and management of deployments (history, deploying/re-deploying, error tracing), of synthetic checks, using <b>GraphQL</b>, <b>React Relay</b> and <b>TypeScript</b>, used by 50+ Engineering teams on a daily basis
+                </li>
+                <li className="pb-1.5">
+                    Improved scalability of message processing nodes by upgrading EC2 scaling policies, introduced node-based internal healthchecks and new metrics for cron-jobs. This reduced incident rate to 0% for background-processing
                 </li>
                 </ul>
             </div>
