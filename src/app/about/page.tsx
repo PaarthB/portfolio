@@ -7,7 +7,7 @@ export default function About() {
     return (
         <main>
             <Navbar />
-            <section className="p-20 bg-amber-50 text-black font-serif">
+            <section className="p-20 bg-gray-50 text-black font-serif">
                 <h1 className="mb-8 text-2xl font-semibold tracking-tighter">About me 🧑</h1>
                 <Image className="items-center justify-items-center block mx-auto" src={`/avatars/me.jpg`} alt={"me"} width="200" height="200" />
                 <p className="mb-4">

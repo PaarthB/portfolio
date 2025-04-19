@@ -2,7 +2,7 @@ import { Navbar } from "../components/navbar";
 
 export default function Experience() {
   return (
-    <main className="bg-amber-50 h-full">
+    <main className="bg-blue-50 h-full">
       <Navbar />
       <section className='p-20 font-black text-black bg-repeat bg-cover bg-bottom w-full h-screen'>
         <h1 className="mb-8 text-2xl font-semibold tracking-tighter flex px-2">
