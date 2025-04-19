@@ -1,22 +1,22 @@
 'use client'
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const buttonClasses = `text-gray-100 font-bold text-sm px-2 py-1 border-2 border-gray-100 hover:bg-gray-100 hover:text-gray-800 rounded-lg transition duration-300`
   const buttons = (
     <>
-      <Link href="/projects" className="mx-2 hover:text-gray-300">Projects</Link>
-      <Link href="/experience" className="mx-2 hover:text-gray-300">Experience</Link>
-      <Link href="/about" className="mx-2 hover:text-gray-300">About</Link>
-      <Link href="/contact" className="mx-2 hover:text-gray-300">Contact</Link>
+      <Link href="/projects" className={buttonClasses}>Projects</Link>
+      <Link href="/experience" className={buttonClasses}>Experience</Link>
+      <Link href="/about" className={buttonClasses}>About</Link>
+      <Link href="/contact" className={buttonClasses}>Contact</Link>
     </>
   ) 
 
   return (
-    <nav className="bg-gray-800 text-white p4 sm:p-4 md:flex md:justify-between 
+    <nav className="bg-gray-800 text-white p4 sm:p-4 flex md:justify-between 
     md:items-center w-full">
       <div className="container mx-auto flex justify-between items-center">
         <a href="" className="text-2xl font-bold">Paarth Bhasin</a>
