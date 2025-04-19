@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="bg-amber-50 h-full">
       <Navbar />
-      <section className="p-20 font-black h-full text-black">
+      <section className="p-20 font-black text-black bg-repeat bg-cover bg-bottom bg-bannerImg w-full h-screen">
         <h1 className="mb-8 text-2xl font-semibold tracking-tighter flex px-2">
           Experience Summary{" "}
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-7 justify-items-center p-0.5">
