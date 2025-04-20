@@ -9,7 +9,7 @@ export default function About() {
             <Navbar />
             <section className="p-20 bg-gray-50 text-black font-serif">
                 <h1 className="mb-8 text-2xl font-semibold tracking-tighter">About me 🧑</h1>
-                <Image className="items-center justify-items-center block mx-auto" src={`/avatars/me.jpg`} alt={"me"} width="200" height="200" />
+                <Image className="rounded-full items-center justify-items-center block mx-auto" src={`/avatars/me.jpg`} alt={"me"} width="200" height="200" />
                 <p className="mb-4">
                     <br/><br/>An engineer based in Sydney, Australia 🌊 🌉, with a passion for bunch of things - sports ⚽, surfing 🏄, travelling & cooking, and a genuine and warm person always 🤗.
                     <br/><br/>I am a problem solver at heart and love to help others (not limited to engineers!) in need. I thrive in a collaborative work environment, and try to improve it with my excellent networking and communication skills.
