@@ -83,7 +83,7 @@ export default function Experience() {
                     by algorithm redesign & SQL query optimisation, improving endpoint latency by 50% on average, eg 91s → 35s.
                 </li>
                 <li className="pb-1.5">
-                    Made multi-region databases in a globally distributed system, resilient to failovers, by optimising <b>TCP/IP settings</b> via <b>OS level programming</b>{" "}
+                    Made multi-region databases in a globally distributed system, resilient to failovers, by optimising <b>Network TCP/IP settings</b> via <b>OS level programming</b>{" "}
                     and optimising application database connection pool management in <b>JDBC Java Driver</b>.
                 </li>
                 <li className="pb-1.5">
