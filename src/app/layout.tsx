@@ -30,7 +30,7 @@ export default function RootLayout({
         {children}
       <footer
         className="fixed bottom-0 bg-zinc-50 text-center text-surface/75 dark:bg-neutral-700 dark:text-white/50 lg:text-left w-full">
-        <div className="bg-black/5 p-3 text-center">
+        <div className="bg-black/5 p-3 pt-1.5 text-center">
           <span>© 2025 Copyright:</span>
           <p className="font-semibold" >Made with ❤️ in <b className="font-extrabold underline">Next.js</b></p>
         </div>
