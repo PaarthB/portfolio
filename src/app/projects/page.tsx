@@ -48,7 +48,7 @@ export default function Experience() {
                         <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on May 21, 2022</time>
                         <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 gap-y-4">
                              <ul className="list-disc">                    
-                                <li className="pb-1.5"><u>Used by by both research students and big tech companies</u></li>
+                                <li className="pb-1.5"><u>Used by both research students and big tech companies</u></li>
                                 <li className="pb-1.5">Open source CLI tool which solves the problem of concurrency management for distributed applications in cloud, using <b>Redis</b>.</li>
                             </ul> 
                         </p>
