@@ -18,10 +18,10 @@ export default function Experience() {
                         </span>
                         <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Founding Engineer - MapAI <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300 ms-3"><b>Latest</b></span></h3>
                         <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Apr 2024 - Jun 2024</time>
-                        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 gap-2.5">
-                            <ul>
-                                <li><u>Project funded by NSW Government</u></li>
-                                <li>Full stack application design with best-practices for geo-spatial analysis tools working with Data Scientists, Researchers & Business Leaders. Tools used include <b>LangChain, OpenAI LLMs, Python, TypeScript, Tailwind CSS and Docker</b></li>
+                        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 gap-y-4">
+                            <ul className="list-disc">                    
+                                <li className="pb-1.5"><u>Project funded by NSW Government</u></li>
+                                <li className="pb-1.5">Full stack application design with best-practices for geo-spatial analysis tools working with Data Scientists, Researchers & Business Leaders. Tools used include <b>LangChain, OpenAI LLMs, Python, TypeScript, Tailwind CSS and Docker</b></li>
                             </ul>
                         </p>
                         <a href="https://mapai.net/about" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700" target="_blank">
@@ -46,10 +46,10 @@ export default function Experience() {
                         </span>
                         <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">LockR - a PyPi Library</h3>
                         <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on May 21, 2022</time>
-                        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 gap-2.5">
-                            <ul>
-                                <li><u>Used by by both research students and big tech companies</u></li>
-                                <li>Open source CLI tool which solves the problem of concurrency management for distributed applications in cloud, using <b>Redis</b>.</li>
+                        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 gap-y-4">
+                             <ul className="list-disc">                    
+                                <li className="pb-1.5"><u>Used by by both research students and big tech companies</u></li>
+                                <li className="pb-1.5">Open source CLI tool which solves the problem of concurrency management for distributed applications in cloud, using <b>Redis</b>.</li>
                             </ul> 
                         </p>
                         <a href="https://github.com/PaarthB/LockR" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700" target="_blank">
