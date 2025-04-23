@@ -2,9 +2,9 @@ import { Navbar } from "../components/navbar"
 
 export default function Projects() {
     return (
-        <main className="bg-gray-50 h-full">
+        <main>
             <Navbar />
-            <section className="p-20">
+            <section className="p-20 bg-white">
                 <h1 className="mb-8 text-2xl font-semibold tracking-tighter flex px-2">
                 Projects{" "}
                 </h1>
