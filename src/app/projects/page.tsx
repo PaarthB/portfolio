@@ -4,7 +4,7 @@ export default function Projects() {
     return (
         <main>
             <Navbar />
-            <section className="p-20 bg-white">
+            <section className="p-20 bg-white pb-[3000px]">
                 <h1 className="mb-8 text-2xl font-semibold tracking-tighter flex px-2">
                 Projects{" "}
                 </h1>
