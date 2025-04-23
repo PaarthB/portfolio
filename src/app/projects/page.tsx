@@ -2,7 +2,7 @@ import { Navbar } from "../components/navbar"
 
 export default function Projects() {
     return (
-        <main className="bg-gray-50 h-screen">
+        <main className="bg-gray-50 h-full">
             <Navbar />
             <section className="p-20">
                 <h1 className="mb-8 text-2xl font-semibold tracking-tighter flex px-2">
