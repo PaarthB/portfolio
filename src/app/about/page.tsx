@@ -12,7 +12,7 @@ export default function About() {
                 <Image className="rounded-full items-center justify-items-center block mx-auto" src={`/avatars/me.jpg`} alt={"me"} width="200" height="200" />
                 <p className="mb-4">
                     <br/><br/>An engineer based in <b>Sydney, Australia</b> 🌊 🌉, with a passion for bunch of things - <b><i>sports</i></b> ⚽ (swimming, basketball and soccer), <b><i>surfing</i></b> 🏄, <b><i>travelling & cooking</i></b>, <b><i>cinematics/ 🎥 & theatre (acting) 🎬</i></b>  with a rare sense of quality <b><i>literature and art</i></b>, and a genuine and warm person always 🤗.
-                    <br/><br/>I am a problem solver at heart and love to help others (not limited to engineers!) in need. I thrive in a collaborative work environment, and try to improve it with my excellent networking and communication skills.
+                    <br/><br/>I am a problem solver at heart and love to help others (not limited to engineers!) in need. I thrive in a collaborative environment, and try to improve it with my excellent networking and communication skills.
                     <br/><br/>
                 </p>
                 <h1 className="mb-8 text-2xl font-semibold tracking-tighter">Technical Skills 👨🏻‍💻</h1>
