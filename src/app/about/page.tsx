@@ -17,7 +17,7 @@ export default function About() {
                 </p>
                 <h1 className="mb-8 text-2xl font-semibold tracking-tighter">Technical Skills 👨🏻‍💻</h1>
                 <p className="mb-4">
-                    I'm a <b>Full Stack Engineer,</b> with a rare combination of skills in <u>DevOps / Site Reliability Engineering</u> and Backend / Frontend. <br/><br/>I have a keen eye to design sharp and performant user interfaces, and also backend apps {'</>'}. 
+                    I'm a <b>Full Stack Engineer</b> with a rare combination of skills in <u>DevOps / Site Reliability Engineering</u> and <u>Backend / Frontend</u> and <u>Mathematics</u>. <br/><br/>I have a keen eye to design sharp and performant user interfaces, and also backend apps {'</>'}. 
                     I like to think about systems at scale, simplify them and also make them more performant and reliable.
                     <br/><br/>I like to sometimes dabble deep into the OS, troubleshooting network layer problems, which also helps me understand why systems behave the way they do. 
                 </p>
