@@ -110,7 +110,7 @@ export default function Projects() {
                         <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on May, 2017</time>
                         <ul className="list-disc mb-4 text-base font-normal text-gray-500 dark:text-gray-400 gap-y-4">                    
                             <li className="pb-1.5">Developed a 3D first person shooter game having Artificial Intelligence (AI), using <b>C++</b>, Microsoft <b>DirectX 11</b> and <b>FMOD</b> Sound Library</li>
-                            <li className="pb-1.5">Based on the famous Indie game Super Hot having a time warp/dilation effect.</li>
+                            <li className="pb-1.5">Based on the famous Indie-game <u>Super Hot</u> having a time warp/dilation effect.</li>
                         </ul> 
                         <a href="https://github.com/PaarthB/3D-First-Person-Shooter" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700" target="_blank">
                             <svg className="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
