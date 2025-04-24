@@ -65,7 +65,7 @@ export default function Projects() {
                                 <path d="M164.619 164.616c-7.248 12.854-21.021 21.541-36.828 21.541-15.71 0-29.405-8.578-36.69-21.296a42.062 42.062 0 0 1-5.574-20.968c0-23.341 18.923-42.263 42.264-42.263 15.609 0 29.232 8.471 36.553 21.059l36.941-21.272c-14.683-25.346-42.096-42.398-73.494-42.398-46.876 0-84.875 38-84.875 84.874 0 15.378 4.091 29.799 11.241 42.238 14.646 25.48 42.137 42.637 73.634 42.637 31.555 0 59.089-17.226 73.714-42.781l-36.886-21.371" fill="#FFF"/>
                             </svg>                        
                         </span>
-                        <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Real-time 3D First Person Shooter - having AI</h3>
+                        <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Real-time 3D First Person Shooter</h3>
                         <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on May, 2017</time>
                         <ul className="list-disc mb-4 text-base font-normal text-gray-500 dark:text-gray-400 gap-y-4">                    
                             <li className="pb-1.5">Developed a 3D first person shooter game having Artificial Intelligence (AI), using <b>C++</b>, Microsoft <b>DirectX 11</b> and <b>FMOD</b> Sound Library</li>
