@@ -19,7 +19,7 @@ export const Navbar = () => {
     <nav className="bg-gray-800 text-white p4 sm:p-4 flex md:justify-between 
     md:items-center w-full">
       <div className="container mx-auto flex justify-between items-center">
-        <a href="" className="text-4xl font-bold"><p className="font-baskervville italic bold">Paarth Bhasin</p></a>
+        <a href="" className="text-5xl font-extrabold"><p className="font-baskervville italic bold">Paarth Bhasin</p></a>
       </div>
       <div className="hidden md:block">
         <div className='flex ml-10 items-baseline space-x-2'>
