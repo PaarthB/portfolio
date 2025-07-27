@@ -7,7 +7,7 @@ export default function Contact() {
             <section className="p-20 bg-white text-black font-serif">
                 <h1 className="mb-8 text-2xl font-semibold tracking-tighter">Contact me</h1>
                 <div className="flex flex-col md:flex-row h-screen w-screen gap-2.5 ml-0">
-                    <a href="https://x.com/FerbTweets" target="_blank">
+{/*                     <a href="https://x.com/FerbTweets" target="_blank">
                         <button
                             type="button"
                             data-twe-ripple-init
@@ -94,7 +94,7 @@ export default function Contact() {
                             <b>Blog</b>
                         </button>
                     </a>
-
+ */}
                 </div>
             </section>
         </main>
