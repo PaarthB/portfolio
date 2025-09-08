@@ -46,14 +46,14 @@ export default function Woolworths() {
             www.bigw.com.au
           </span>
         </div>
-        <div className="flex flex-col space-y-4 sm:text-sm text-xs">
+        <div className="flex flex-col space-y-4 text-gray-300 md:text-gray-400 text-left md:text-left">
           {/* Tasks Description 1 */}
           {tasks.map((item, index) => {
             return (
               <div key={index} className="flex flex-row space-x-1">
                 <ArrowIcon className={" h-5 w-4 text-AAsecondary flex-none"} />
                 <span
-                  className="text-gray-500 sm:text-sm text-xs"
+                  className="text-gray-300 md:text-gray-400 text-left md:text-left"
                   dangerouslySetInnerHTML={{
                     __html: getTasksTextWithHighlightedKeyword(item.text, item.keywords),
                   }}

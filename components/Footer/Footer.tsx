@@ -31,13 +31,13 @@ export default function Footer(props: { githubUrl: string; hideSocialsInDesktop:
     text-sm  space-y-2  "
         >
           <span className="group-hover:text-AAsecondary sm:text-sm text-xs">
-            Built by Paarth Bhasin
+            Built with ❤️ in Next.js by Paarth Bhasin
           </span>
 
-          <span className="text-xs flex flex-row items-center space-x-2 group-hover:text-AAsecondary">
+          {/* <span className="text-xs flex flex-row items-center space-x-2 group-hover:text-AAsecondary">
             <GithubIcon className={"w-4 h-4 text-gray-400 fill-current group-hover:text-AAsecondary"} />
             <span className="">Source code - Github</span>
-          </span>
+          </span> */}
         </div>
       </a>
     </div>

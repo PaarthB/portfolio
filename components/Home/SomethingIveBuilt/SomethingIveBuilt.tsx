@@ -155,7 +155,7 @@ export default function SomethingIveBuilt() {
               <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
                 <p className="text-gray-300 md:text-gray-400 text-left ">
                   I had the opportunity to lead the development of a Python CLI powering critical cloud applications 
-                  currently in use by students and big tech, which aimed to create a
+                  currently in use by students and big tech, which aimed to create
                   a way to manage distributed application in cloud, to avoid resource conflicts due to multiple instances of the application running. 
                   <br/><br/>Oversaw the planning and development of the
                   project, including the <span className="text-AAsecondary"> design</span> and implementation using
@@ -224,7 +224,7 @@ export default function SomethingIveBuilt() {
               </div>
               <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6  z-10">
                 <p className="text-gray-300 md:text-gray-400 text-left">
-                  A Machine Learning Model using <span className="text-AAsecondary"> CNN LSTM</span> 
+                  A Machine Learning Model using <span className="text-AAsecondary"> CNN LSTM</span>{" "}
                   (Convulational Neural Network - Long Short Term Memory), which helps with stock prediction, 
                   it ranked very well amongst other models in the competition.
                   {/* <br/><br/> */}

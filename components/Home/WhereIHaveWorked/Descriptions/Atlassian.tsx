@@ -33,7 +33,7 @@ export default function Atlassian() {
           Senior Software Engineer - Performance<span className="text-AAsecondary"> @ Atlassian</span>
           </span>
           {/* Date */}
-          <span className="font-mono text-xs text-gray-500">Jan 2019 - Feb 2023</span>
+          <span className="font-mono text-xs text-gray-500">Jan 2019 - Feb 2024</span>
           <span className="font-mono text-xs text-AAsecondary hover:cursor-pointer" style={{ fontSize: "0.6rem" }}
            // set on click to open the website
            onClick={() => window.open("https://www.atlassian.com/", "_blank")}
@@ -41,14 +41,14 @@ export default function Atlassian() {
             www.atlassian.com
           </span>
         </div>
-        <div className="flex flex-col space-y-4 sm:text-sm text-xs">
+        <div className="flex flex-col space-y-4 md:text-gray-400 text-left md:text-left">
           {/* Tasks Description 1 */}
           {tasks.map((item, index) => {
             return (
               <div key={index} className="flex flex-row space-x-1">
                 <ArrowIcon className={" h-5 w-4 text-AAsecondary flex-none"} />
                 <span
-                  className="text-gray-500 sm:text-sm text-xs"
+                  className="md:text-gray-400 text-left md:text-left"
                   dangerouslySetInnerHTML={{
                     __html: getTasksTextWithHighlightedKeyword(item.text, item.keywords),
                   }}
