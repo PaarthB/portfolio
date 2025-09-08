@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import ArrowIcon from "../../Icons/ArrowIcon";
 import Atlassian from "./Descriptions/Atlassian";
 import Odecee from "./Descriptions/Odecee";
 import IdealFresh from "./Descriptions/IdealFresh";
 import AdvancedAgroManagement from "./Descriptions/AdvancedAgroManagement";
-import Fantasia from "./Descriptions/Fantasia";
+import UNSW from "./Descriptions/UNSW";
 import SuperBerry from "./Descriptions/SuperBerry";
 import Woolworths from "./Descriptions/Woolworths";
 import Evermed from "./Descriptions/Evermed";
@@ -24,14 +24,8 @@ export default function WhereIHaveWorked() {
         return <Atlassian />;
       case "Odecee":
         return <Odecee />;
-      case "IdealFresh":
-        return <IdealFresh />;
-      case "Advanced Agro Management":
-        return <AdvancedAgroManagement />;
-      case "Fantasia":
-        return <Fantasia />;
-      case "SuperBerry":
-        return <SuperBerry />;
+      case "UNSW":
+        return <UNSW />;
     }
   };
   const [DescriptionJob, setDescriptionJob] = React.useState("Big WX");
@@ -72,10 +66,6 @@ const CompaniesBar = props => {
     false,
     false,
     false,
-    false,
-    false,
-    false,
-    false,
   ]);
   const CompanyButton = props => {
     return (
@@ -90,7 +80,7 @@ const CompaniesBar = props => {
              hover:bg-ResumeButtonHover rounded  font-mono  
              py-3 md:pl-6 md:px-4 md:w-44 w-32 duration-500
              ${
-               companyNameBackgroundColorGreen[props.ButtonOrderOfcompanyNameBackgroundColorGreen]
+               companyNameBackgroundColorGreen[props.ButtonOrderOfcompanyNameBackgroundColorGreen - 1]
                  ? "bg-ResumeButtonHover text-AAsecondary"
                  : "text-gray-500"
              }`}
@@ -99,6 +89,12 @@ const CompaniesBar = props => {
       </button>
     );
   };
+
+  const barLength = () => { 
+    const length = `md:h-${barAbovePosition === 512 ? `12` : `10`}`
+    console.log("LENGTH", length)
+    return length
+  }
 
   return (
     <div
@@ -109,14 +105,14 @@ const CompaniesBar = props => {
     >
       {/* // ? left bar Holder */}
       <div
-        className=" hidden md:block bg-gray-500 relative h-0.5 w-34 md:h-[180px] translate-y-1 md:w-0.5  
-        rounded md:order-1 order-2  "
+        className=" hidden md:block bg-gray-500 relative h-0.5 w-34 md:h-[228px] translate-y-1 md:w-0.5  
+        rounded md:order-1 order-2 "
       >
         {/* // ? animated left bar */}
         <motion.div
           animate={{ y: barPosition }}
           // ref={barRef}
-          className={`absolute w-10 h-0.5 md:w-0.5 md:h-12 rounded bg-AAsecondary `}
+          className={`absolute w-10 h-0.5 md:w-0.5 rounded bg-AAsecondary md:h-11`}
         ></motion.div>
       </div>
       {/* // ? Companies name as buttons */}
@@ -125,37 +121,46 @@ const CompaniesBar = props => {
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={1}
             CompanyName="Big WX"
-            BarPosition={-4}
+            BarPosition={-8}
             BarAvobePosition={128}
             DescriptionJob="Big WX"
-            CompanyNameBackgroundColorGreen={[false, true, false, false, false, false, false, false, false]}
+            CompanyNameBackgroundColorGreen={[true, false, false, false, false]}
             setDescriptionJob={props.setDescriptionJob}
           />
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={2}
             CompanyName="Evermed"
-            BarPosition={40}
+            BarPosition={36}
             BarAvobePosition={256}
             DescriptionJob="Evermed"
-            CompanyNameBackgroundColorGreen={[false, false, true, false, false, false, false, false, false]}
+            CompanyNameBackgroundColorGreen={[false, true, false, false, false]}
             setDescriptionJob={props.setDescriptionJob}
           />
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={3}
             CompanyName="Atlassian"
-            BarPosition={84}
+            BarPosition={80}
             BarAvobePosition={384}
             DescriptionJob="Atlassian"
-            CompanyNameBackgroundColorGreen={[false, false, false, true, false, false, false, false, false]}
+            CompanyNameBackgroundColorGreen={[false, false, true, false, false]}
             setDescriptionJob={props.setDescriptionJob}
           />
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={4}
-            CompanyName="Odecee"
-            BarPosition={128}
+            CompanyName="University of NSW"
+            BarPosition={130}
             BarAvobePosition={512}
+            DescriptionJob="UNSW"
+            CompanyNameBackgroundColorGreen={[false, false, false, true, false]}
+            setDescriptionJob={props.setDescriptionJob}
+          />
+          <CompanyButton
+            ButtonOrderOfcompanyNameBackgroundColorGreen={5}
+            CompanyName="Odecee"
+            BarPosition={190}
+            BarAvobePosition={650}
             DescriptionJob="Odecee"
-            CompanyNameBackgroundColorGreen={[false, false, false, false, true, false, false, false, false]}
+            CompanyNameBackgroundColorGreen={[false, false, false, false, true]}
             setDescriptionJob={props.setDescriptionJob}
           />
         </div>

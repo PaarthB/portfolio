@@ -9,7 +9,7 @@ interface AboutMeProps {
 
 const AboutMe = forwardRef<HTMLDivElement, AboutMeProps>((props, ref) => {
   const technologies = [
-    ["Next.js/React", "TypeScript/JavaScript", "Tailwind CSS", "Azure DevOps", "AWS/Google Cloud"],
+    ["Next.js/React", "TypeScript/JavaScript", "Tailwind CSS", "Azure DevOps", "AWS/Azure"],
     ["Node.js", "C#/.NET", "Python", "Observability", "Figma"],
   ];
 

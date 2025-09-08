@@ -117,7 +117,7 @@ export default function SomethingIveBuilt() {
                 ></div>
               </Link> */}
 
-              <a href="https://ubiquitous-bublanina-da84ec.netlify.app/" target={"_blank"} rel="noreferrer">
+              <a href="https://pypi.org/project/lockr/" target={"_blank"} rel="noreferrer">
                 <div
                   // onClick={}
                   className="absolute w-full h-full rounded bg-AAprimary 
@@ -146,7 +146,7 @@ export default function SomethingIveBuilt() {
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
                 <span className="text-AAsecondary text-base">Concurrency management of cloud applications</span>
-                <a href="https://ubiquitous-bublanina-da84ec.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <a href="https://pypi.org/project/lockr/" target="_blank" rel="noopener noreferrer">
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
                     LockR
                   </span>
@@ -189,7 +189,7 @@ export default function SomethingIveBuilt() {
           absolute md:grid grid-cols-12 w-full h-full  content-center "
           >
             <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
-              <a href={"https://www.fevertokens.io/"} target="_blank" rel="noreferrer">
+              <a href={"https://www.kaggle.com/competitions/optiver-realized-volatility-prediction"} target="_blank" rel="noreferrer">
                 <div
                   className="absolute w-full h-full rounded bg-AAprimary 
            transition-opacity opacity-50 hover:opacity-0 hover:cursor-pointer duration-300"
@@ -216,7 +216,7 @@ export default function SomethingIveBuilt() {
             >
               <div className="flex flex-col space-y-1  z-10">
                 <span className="text-AAsecondary text-base">Volatility prediction in stock markets</span>
-                <a href="https://www.fevertokens.io/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.kaggle.com/code/paarthbhasin/cnn-lstm-multivariate/" target="_blank" rel="noopener noreferrer">
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
                     Optiver - Realised Volatility prediction
                   </span>

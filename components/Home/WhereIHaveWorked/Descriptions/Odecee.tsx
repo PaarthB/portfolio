@@ -19,7 +19,7 @@ export default function Odecee() {
         <div className="flex flex-col spacey-y-2">
           {/* Title */}
           <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
-          Full Stack Engineer <span className="text-AAsecondary">@ Odecee</span>
+          Junior Full Stack Engineer <span className="text-AAsecondary">@ Odecee</span>
           </span>
           {/* Date */}
           <span className="font-mono text-xs text-gray-500">Aug 2018 - Dec 2018</span>
