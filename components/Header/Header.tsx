@@ -15,15 +15,17 @@ const Header = (props: { finishedLoading: boolean,sectionsRef }) => {
   const [rotate, setRotate] = useState<boolean>(false);
   const context = useContext(AppContext);
   const scrollSizeY=useRef<number>(0);
+  const currentYAfterClick = useRef<number | undefined>(undefined)
 
   // Define the EventListener for the NavBar
   useEffect(() => {
     if (context.sharedState.portfolio.NavBar.IntervalEvent == null) {
       context.sharedState.portfolio.NavBar.IntervalEvent=() => {
-        if (scrollSizeY.current == 0) {
+        // console.log("JUST CLICKED", context.sharedState.portfolio.NavBar.JustClicked)
+        if (scrollSizeY.current === 0 || context.sharedState.portfolio.NavBar.JustClicked) {
           scrollSizeY.current = window.scrollY;
         } else {
-          if (window.scrollY > 50) {
+          if (window.scrollY > 50 && scrollSizeY.current !== window.scrollY) {
             if (window.scrollY > scrollSizeY.current) {
               if (RefNavBar) {
                 RefNavBar.current?.classList.remove("translate-y-0");
@@ -49,6 +51,16 @@ const Header = (props: { finishedLoading: boolean,sectionsRef }) => {
       //Hide when scroll down & show when scroll up
       if (typeof window !== "undefined") {
         window.addEventListener("scroll", context.sharedState.portfolio.NavBar.IntervalEvent);
+        window.addEventListener("scrollend", (event) => {
+          // Code to execute when scrolling finishes
+          console.log("Scrolling has ended!");
+          if (context.sharedState.portfolio.NavBar.JustClicked) {
+            RefNavBar.current?.classList.add("translate-y-0");
+            RefNavBar.current?.classList.remove("-translate-y-full");
+            context.sharedState.portfolio.NavBar.JustClicked = false
+          }
+          // You can access event details via the 'event' object if needed
+        });
       }
     }
   }, [context.sharedState.portfolio.NavBar, context.sharedState.portfolio.NavBar.scrolling]);

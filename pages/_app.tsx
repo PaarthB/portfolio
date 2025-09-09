@@ -58,6 +58,7 @@ function MyApp({ Component, pageProps }) {
         IntervalEvent: null,
         scrolling: null,
         scrollSizeY: null,
+        JustClicked: false,
       },
       Scrolling: {
         IntervalEvent: null,

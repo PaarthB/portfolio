@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import { Link as ReactScrollLink } from "react-scroll";
+import AppContext from "../../AppContextFolder/AppContext";
 
 export default function DesktopMenu(props: { finishedLoading: boolean }) {
+  const context = useContext(AppContext);
+
   return (
     <div className="font-mono text-xs md:flex hidden flex-row items-center space-x-8 ">
       <motion.div
@@ -23,7 +26,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
        
       >
         <ReactScrollLink to="aboutSection" spy={true} smooth={true} offset={-100} duration={200}>
-          &gt; 01. <span className="text-white hover:cursor-pointer hover:text-AAsecondary duration-300">About</span>
+          &gt; 01. <span onClick={() => context.sharedState.portfolio.NavBar.JustClicked = true} className="text-white hover:cursor-pointer hover:text-AAsecondary duration-300">About</span>
         </ReactScrollLink>
       </motion.div>
       <motion.div
@@ -45,7 +48,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
       >
         <ReactScrollLink to="WhereIhaveWorkedSection" spy={true} smooth={true} offset={-300} duration={200}>
           &gt; 02.{" "}
-          <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Experience</span>
+          <span onClick={() => context.sharedState.portfolio.NavBar.JustClicked = true} className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Experience</span>
         </ReactScrollLink>
       </motion.div>
       <motion.div
@@ -65,7 +68,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         className="text-AAsecondary"
       >
         <ReactScrollLink to="SomethingIveBuiltSection" spy={true} smooth={true} offset={-100} duration={200}>
-        &gt; 03. <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Work</span>
+        &gt; 03. <span onClick={() => context.sharedState.portfolio.NavBar.JustClicked = true} className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Work</span>
 
         </ReactScrollLink>
         
@@ -87,7 +90,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         className="text-AAsecondary"
       >
          <ReactScrollLink to="GetInTouchSection" spy={true} smooth={true} offset={-100} duration={200}>
-         &gt; 04. <span className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Contact</span>
+         &gt; 04. <span onClick={() => context.sharedState.portfolio.NavBar.JustClicked = true} className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Contact</span>
         </ReactScrollLink>
       </motion.span>
       <a href={"/cv_p_bhasin.pdf"} target={"_blank"} rel="noreferrer">
