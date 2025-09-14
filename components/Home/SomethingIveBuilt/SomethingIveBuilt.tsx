@@ -64,7 +64,7 @@ export default function SomethingIveBuilt() {
             >
               <div className="flex flex-col space-y-1  z-10">
                 <span className="text-AAsecondary text-base">Geo-spatial insights</span>
-                <a href="https://www.vision.io" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.mapai.net" target="_blank" rel="noopener noreferrer">
                   <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
                     MapAI - now a NSW government project
                   </span>
