@@ -41,7 +41,7 @@ export default function Woolworths() {
             className="font-mono text-xs text-AAsecondary hover:cursor-pointer"
             style={{ fontSize: "0.6rem" }}
             // set on click to open the website
-            onClick={() => window.open("https://www.vision.io/", "_blank")}
+            onClick={() => window.open("https://www.bigw.com.au/", "_blank")}
           >
             www.bigw.com.au
           </span>
