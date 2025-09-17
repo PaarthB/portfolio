@@ -93,7 +93,7 @@ export default function Home() {
     description: `I've been extensive experience working on Software development. Let's get in touch!`,
     image: "/img/me.jpg",
     type: "website",
-    twitter: "@FerbTweets
+    twitter: "@FerbTweets",
   };
   const isProd = process.env.NODE_ENV === "production";
 
