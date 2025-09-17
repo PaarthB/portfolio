@@ -103,8 +103,8 @@ export default function Home() {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content={`https://paarthbhasin.com`} />
-        <link rel="canonical" href={`https://paarthbhasin.com`} />
+        <meta property="og:url" content={`https://www.paarthbhasin.com`} />
+        <link rel="canonical" href={`https://www.paarthbhasin.com`} />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Paarth Bhasin" />
         <meta property="og:description" content={meta.description} />
