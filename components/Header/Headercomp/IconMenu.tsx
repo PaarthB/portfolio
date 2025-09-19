@@ -23,7 +23,7 @@ const IconMenu = (props: { rotate; setRotate; setShowElement; ShowElement,finish
         transition={{ opacity: { duration: 0 } }}
         className="flex justify-end"
       >
-        <img src="/img/title-md.jpg" alt="Paarth Bhasin" fetchpriority="high" />
+        <img src="/img/title-md.jpg" alt="Paarth Bhasin" />
         {/* <div className="w-6 h-0.5 rounded bg-AAsecondary"></div> */}
       </motion.div>
       {/* <div className="flex justify-end">
