@@ -5,6 +5,7 @@ import IconMenu from "./Headercomp/IconMenu";
 import MobileMenu from "./Headercomp/MobileMenu";
 import { motion } from "framer-motion";
 import AppContext from "../AppContextFolder/AppContext";
+import Title from "./Headercomp/Title";
 
 const addClass = (ref: any, myclass: string) => {
   ref.current?.classLIst.add(myclass);
@@ -97,7 +98,7 @@ const Header = (props: { finishedLoading: boolean,sectionsRef }) => {
         <Logo finishedLoading={props.finishedLoading} />
 
         {/* Hide icon Designed by me */}
-
+        <Title rotate={rotate} />
         <IconMenu
           rotate={rotate}
           setRotate={setRotate}
