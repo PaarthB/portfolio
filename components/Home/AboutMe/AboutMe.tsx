@@ -37,7 +37,7 @@ const AboutMe = forwardRef<HTMLDivElement, AboutMeProps>((props, ref) => {
 
             This unique background allows me to look at systems from a user’s perspective, always looking at what the user might like vs not so much, and how processes can be improved for developers.
 
-            <br/><br/>Recently, I have also recently gained experience in <span className="text-AAsecondary">geo-spatial intelligence tools</span> where I worked on a government funded project, as a full stack developer: from AI to databases to frontend to systems (like Martin Vector Tile Server). This was one of the projects where I to upskill and learn a lot from scratch.
+            <br/><br/>Recently, I have also gained experience in <span className="text-AAsecondary">geo-spatial intelligence tools</span> where I worked on a government funded project, as a full stack developer: from AI to databases to frontend to systems (like Martin Vector Tile Server). This was one of the projects where I to upskill and learn a lot from scratch.
 
             I have worked on multiple initiatives both on personal and professional projects, to improve <span className="text-AAsecondary">developer productivity</span>. I have a keen eye to design <span className="text-AAsecondary">sharp and performant user interfaces</span>, and also <span className="text-AAsecondary">backend apps</span>. I like to think about systems at scale, simplify them and also make them more <span className="text-AAsecondary">performant</span> and <span className="text-AAsecondary">reliable</span>.
 
