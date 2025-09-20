@@ -7,7 +7,7 @@ const Title = (props: { rotate }) => {
             transition={{ opacity: { duration: 0 } }}
             className="flex justify-end"
         >
-            <img src="/img/title-md-2.png" alt="Paarth Bhasin" />
+            <img src="/img/title-md-extra-bold.png" alt="Paarth Bhasin" />
             {/* <div className="w-6 h-0.5 rounded bg-AAsecondary"></div> */}
         </motion.div>
     )
