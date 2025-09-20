@@ -4,8 +4,8 @@ export default function Logo(props: { finishedLoading: boolean }) {
   return (
     <>
       <motion.div
-        initial={{ y: 0, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        initial={{ y: 10, opacity: 0 }}
+        animate={{ y: 10, opacity: 1 }}
         transition={{
           type: "spring",
           y: { delay: props.finishedLoading ? 0 : 8, duration: 0 },

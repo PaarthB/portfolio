@@ -129,7 +129,7 @@ export default function Home() {
           {context.sharedState.finishedLoading ? <SomethingIveBuilt /> : <></>}
           {context.sharedState.finishedLoading ? <GetInTouch /> : <></>}
           {context.sharedState.finishedLoading ? (
-            <Footer githubUrl={"https://github.com/Paarth/portfolio"} hideSocialsInDesktop={true} />
+            <Footer githubUrl={"https://github.com/PaarthB/portfolio"} hideSocialsInDesktop={true} />
           ) : (
             <></>
           )}
