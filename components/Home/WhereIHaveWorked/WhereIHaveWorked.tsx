@@ -25,7 +25,7 @@ export default function WhereIHaveWorked() {
         return <UNSW />;
     }
   };
-  const [DescriptionJob, setDescriptionJob] = React.useState("EnergyInstitute");
+  const [DescriptionJob, setDescriptionJob] = React.useState("Big WX");
   return (
     <div data-aos="fade-up" className="flex flex-col items-center justify-center py-24 space-y-12 bg-AAprimary">
       {/* // ? Title "Where I've Worked" */}
