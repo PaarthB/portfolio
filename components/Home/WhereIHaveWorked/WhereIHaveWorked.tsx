@@ -1,14 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 import ArrowIcon from "../../Icons/ArrowIcon";
 import Atlassian from "./Descriptions/Atlassian";
-import Odecee from "./Descriptions/Odecee";
-import IdealFresh from "./Descriptions/IdealFresh";
-import AdvancedAgroManagement from "./Descriptions/AdvancedAgroManagement";
-import UNSW from "./Descriptions/UNSW";
-import SuperBerry from "./Descriptions/SuperBerry";
-import Woolworths from "./Descriptions/Woolworths";
 import Evermed from "./Descriptions/Evermed";
+import Odecee from "./Descriptions/Odecee";
+import UNSW from "./Descriptions/UNSW";
+import Woolworths from "./Descriptions/Woolworths";
 
 export default function WhereIHaveWorked() {
   const barRef = React.useRef<HTMLDivElement>(null);
@@ -28,7 +25,7 @@ export default function WhereIHaveWorked() {
         return <UNSW />;
     }
   };
-  const [DescriptionJob, setDescriptionJob] = React.useState("Big WX");
+  const [DescriptionJob, setDescriptionJob] = React.useState("EnergyInstitute");
   return (
     <div data-aos="fade-up" className="flex flex-col items-center justify-center py-24 space-y-12 bg-AAprimary">
       {/* // ? Title "Where I've Worked" */}
@@ -58,7 +55,7 @@ export default function WhereIHaveWorked() {
 }
 
 const CompaniesBar = props => {
-  const [barPosition, setBarPosition] = React.useState<Number>(-4); // Green bar position by the default it's -20px
+  const [barPosition, setBarPosition] = React.useState<Number>(-8); // Green bar position by the default it's -20px
   const [barAbovePosition, setBarAbovePosition] = React.useState<Number>(0);
   const [companyNameBackgroundColorGreen, setCompanyNameBackgroundColorGreen] = React.useState<boolean[]>([
     true,
@@ -80,7 +77,7 @@ const CompaniesBar = props => {
              hover:bg-ResumeButtonHover rounded  font-mono  
              py-3 md:pl-6 md:px-4 md:w-44 w-32 duration-500
              ${
-               companyNameBackgroundColorGreen[props.ButtonOrderOfcompanyNameBackgroundColorGreen - 1]
+               companyNameBackgroundColorGreen[props.ButtonOrderOfcompanyNameBackgroundColorGreen]
                  ? "bg-ResumeButtonHover text-AAsecondary"
                  : "text-gray-500"
              }`}
@@ -89,12 +86,6 @@ const CompaniesBar = props => {
       </button>
     );
   };
-
-  const barLength = () => { 
-    const length = `md:h-${barAbovePosition === 512 ? `12` : `10`}`
-    console.log("LENGTH", length)
-    return length
-  }
 
   return (
     <div
@@ -105,60 +96,60 @@ const CompaniesBar = props => {
     >
       {/* // ? left bar Holder */}
       <div
-        className=" hidden md:block bg-gray-500 relative h-0.5 w-34 md:h-[228px] translate-y-1 md:w-0.5  
-        rounded md:order-1 order-2 "
+        className=" hidden md:block bg-gray-500 relative h-0.5 w-34 md:h-[220px] translate-y-1 md:w-0.5  
+        rounded md:order-1 order-2  "
       >
         {/* // ? animated left bar */}
         <motion.div
           animate={{ y: barPosition }}
           // ref={barRef}
-          className={`absolute w-10 h-0.5 md:w-0.5 rounded bg-AAsecondary md:h-11`}
+          className={`absolute w-10 h-0.5 md:w-0.5 md:h-12 rounded bg-AAsecondary `}
         ></motion.div>
       </div>
       {/* // ? Companies name as buttons */}
       <div className="flex flex-col md:order-2 order-1 space-y-1 pl-8 md:pl-0 ">
         <div className="flex flex-row md:flex-col">
           <CompanyButton
-            ButtonOrderOfcompanyNameBackgroundColorGreen={1}
+            ButtonOrderOfcompanyNameBackgroundColorGreen={0}
             CompanyName="Big WX"
-            BarPosition={-8}
-            BarAvobePosition={128}
+            BarPosition={-10}
+            BarAvobePosition={1}
             DescriptionJob="Big WX"
             CompanyNameBackgroundColorGreen={[true, false, false, false, false]}
             setDescriptionJob={props.setDescriptionJob}
           />
           <CompanyButton
-            ButtonOrderOfcompanyNameBackgroundColorGreen={2}
+            ButtonOrderOfcompanyNameBackgroundColorGreen={1}
             CompanyName="Evermed"
             BarPosition={36}
-            BarAvobePosition={256}
+            BarAvobePosition={128}
             DescriptionJob="Evermed"
             CompanyNameBackgroundColorGreen={[false, true, false, false, false]}
             setDescriptionJob={props.setDescriptionJob}
           />
           <CompanyButton
-            ButtonOrderOfcompanyNameBackgroundColorGreen={3}
-            CompanyName="Atlassian"
+            ButtonOrderOfcompanyNameBackgroundColorGreen={2}
+            CompanyName="UNSW"
             BarPosition={80}
-            BarAvobePosition={384}
-            DescriptionJob="Atlassian"
+            BarAvobePosition={256}
+            DescriptionJob="UNSW"
             CompanyNameBackgroundColorGreen={[false, false, true, false, false]}
             setDescriptionJob={props.setDescriptionJob}
           />
           <CompanyButton
-            ButtonOrderOfcompanyNameBackgroundColorGreen={4}
-            CompanyName="University of NSW"
-            BarPosition={130}
-            BarAvobePosition={512}
-            DescriptionJob="UNSW"
+            ButtonOrderOfcompanyNameBackgroundColorGreen={3}
+            CompanyName="Atlassian"
+            BarPosition={125}
+            BarAvobePosition={384}
+            DescriptionJob="Atlassian"
             CompanyNameBackgroundColorGreen={[false, false, false, true, false]}
             setDescriptionJob={props.setDescriptionJob}
           />
           <CompanyButton
-            ButtonOrderOfcompanyNameBackgroundColorGreen={5}
+            ButtonOrderOfcompanyNameBackgroundColorGreen={4}
             CompanyName="Odecee"
-            BarPosition={190}
-            BarAvobePosition={650}
+            BarPosition={168}
+            BarAvobePosition={512}
             DescriptionJob="Odecee"
             CompanyNameBackgroundColorGreen={[false, false, false, false, true]}
             setDescriptionJob={props.setDescriptionJob}
