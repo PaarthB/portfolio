@@ -1,8 +1,10 @@
-import React from "react";
-import ArrowIcon from "../../../Icons/ArrowIcon";
-import { getTasksTextWithHighlightedKeyword } from "./taskAndType";
+// components/Experience/EnergyInstitute.js (or wherever you place it)
 
-export default function Evermed() {
+import React from "react";
+import ArrowIcon from "../../../Icons/ArrowIcon"; // Adjust path as needed
+import { getTasksTextWithHighlightedKeyword } from "./taskAndType"; // Adjust path
+
+export default function Everned() {
   const tasks = [
     {
       text: "Part of a 4 person startup, empowering customers across Australia, effectively acting in the capacity of tech lead",
@@ -23,11 +25,10 @@ export default function Evermed() {
   ];
 
   return (
-    <>
-      <div className="flex flex-col space-y-5 max-w-xl px-4 md:px-0">
-        <div className="flex flex-col spacey-y-2">
-          {/* Title */}
-          <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
+    <div className="flex flex-col space-y-5 max-w-xl px-4 md:px-0">
+      <div className="flex flex-col spacey-y-2">
+        {/* Title */}
+        <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
           Full Stack Engineer <span className="text-AAsecondary">@ Evermed</span>
           </span>
           {/* Date */}
@@ -40,24 +41,22 @@ export default function Evermed() {
           >
             www.evermed.com.au
           </span>
-        </div>
-        <div className="flex flex-col space-y-4 md:text-gray-400 text-left md:text-left">
-          {/* Tasks Description 1 */}
-          {tasks.map((item, index) => {
-            return (
-              <div key={index} className="flex flex-row space-x-1">
-                <ArrowIcon className={" h-5 w-4 text-AAsecondary flex-none"} />
-                <span
-                  className="md:text-gray-400 text-left md:text-left"
-                  dangerouslySetInnerHTML={{
-                    __html: getTasksTextWithHighlightedKeyword(item.text, item.keywords),
-                  }}
-                ></span>
-              </div>
-            );
-          })}
-        </div>
       </div>
-    </>
+        <div className="flex flex-col space-y-4 text-gray-300 md:text-gray-400 text-left md:text-left">
+        {tasks.map((item, index) => {
+          return (
+            <div key={index} className="flex flex-row space-x-2">
+              <ArrowIcon className={" h-5 w-4 text-AAsecondary flex-none"} />
+              <span
+                className="text-gray-300 md:text-gray-400 text-left md:text-left"
+                dangerouslySetInnerHTML={{
+                  __html: getTasksTextWithHighlightedKeyword(item.text, item.keywords),
+                }}
+              ></span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 }

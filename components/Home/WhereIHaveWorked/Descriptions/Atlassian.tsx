@@ -21,43 +21,39 @@ export default function Atlassian() {
       text: "Collaborated closely with developers, providing technical expertise and insights to enhance the overall system architecture.",
       keywords: ["team collaboration", "technical expertise", "system architecture"],
     },
-];
-
-
+  ];
+    
   return (
-    <>
-      <div className="flex flex-col space-y-5 max-w-xl px-4 md:px-0">
-        <div className="flex flex-col spacey-y-2">
-          {/* Title */}
-          <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
+    <div className="flex flex-col space-y-5 max-w-xl px-4 md:px-0">
+      <div className="flex flex-col spacey-y-2">
+        {/* Title */}
+        <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
           Senior Software Engineer - Performance<span className="text-AAsecondary"> @ Atlassian</span>
           </span>
           {/* Date */}
           <span className="font-mono text-xs text-gray-500">Jan 2019 - Feb 2024</span>
-          <span className="font-mono text-xs text-AAsecondary hover:cursor-pointer" style={{ fontSize: "0.6rem" }}
+        <span className="font-mono text-xs text-AAsecondary hover:cursor-pointer" style={{ fontSize: "0.6rem" }}
            // set on click to open the website
            onClick={() => window.open("https://www.atlassian.com/", "_blank")}
           >
             www.atlassian.com
-          </span>
-        </div>
-        <div className="flex flex-col space-y-4 md:text-gray-400 text-left md:text-left">
-          {/* Tasks Description 1 */}
-          {tasks.map((item, index) => {
-            return (
-              <div key={index} className="flex flex-row space-x-1">
-                <ArrowIcon className={" h-5 w-4 text-AAsecondary flex-none"} />
-                <span
-                  className="md:text-gray-400 text-left md:text-left"
-                  dangerouslySetInnerHTML={{
-                    __html: getTasksTextWithHighlightedKeyword(item.text, item.keywords),
-                  }}
-                ></span>
-              </div>
-            );
-          })}
-        </div>
+        </span>
       </div>
-    </>
+        <div className="flex flex-col space-y-4 text-gray-300 md:text-gray-400 text-left md:text-left">
+        {tasks.map((item, index) => {
+          return (
+            <div key={index} className="flex flex-row space-x-2">
+              <ArrowIcon className={" h-5 w-4 text-AAsecondary flex-none"} />
+              <span
+                className="text-gray-300 md:text-gray-400 text-left md:text-left"
+                dangerouslySetInnerHTML={{
+                  __html: getTasksTextWithHighlightedKeyword(item.text, item.keywords),
+                }}
+              ></span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 }
