@@ -129,19 +129,19 @@ const CompaniesBar = props => {
           />
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={2}
-            CompanyName="UNSW"
+            CompanyName="Atlassian"
             BarPosition={80}
             BarAvobePosition={256}
-            DescriptionJob="UNSW"
+            DescriptionJob="Atlassian"
             CompanyNameBackgroundColorGreen={[false, false, true, false, false]}
             setDescriptionJob={props.setDescriptionJob}
           />
           <CompanyButton
             ButtonOrderOfcompanyNameBackgroundColorGreen={3}
-            CompanyName="Atlassian"
+            CompanyName="UNSW"
             BarPosition={125}
             BarAvobePosition={384}
-            DescriptionJob="Atlassian"
+            DescriptionJob="UNSW"
             CompanyNameBackgroundColorGreen={[false, false, false, true, false]}
             setDescriptionJob={props.setDescriptionJob}
           />
