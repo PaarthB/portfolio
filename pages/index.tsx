@@ -91,7 +91,7 @@ export default function Home() {
   const meta = {
     title: "Paarth Bhasin - Front End / Full Stack Software Engineer",
     description: `I've been extensive experience working on Software development. Let's get in touch!`,
-    image: "/img/me.jpg",
+    image: "/img/me.png",
     type: "website",
     twitter: "@FerbTweets",
   };
