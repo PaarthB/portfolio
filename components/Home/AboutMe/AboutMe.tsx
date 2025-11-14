@@ -42,9 +42,11 @@ const AboutMe = forwardRef<HTMLDivElement, AboutMeProps>((props, ref) => {
             I have worked on multiple initiatives both on personal and professional projects, to improve <span className="text-AAsecondary">developer productivity</span>. I have a keen eye to design <span className="text-AAsecondary">sharp and performant user interfaces</span>, and also <span className="text-AAsecondary">backend apps</span>. I like to think about systems at scale, simplify them and also make them more <span className="text-AAsecondary">performant</span> and <span className="text-AAsecondary">reliable</span>.
 
             I like to sometimes dabble deep into the <span className="text-AAsecondary">Operating system</span>, troubleshooting network layer problems, which also helps me understand why systems behave the way they do.</div>
+            <br/><br/>Outside of this, I enjoy travelling, cooking, playing basketball, swimming and surfing. <br/>
             <div className="font-Header tracking-wide text-gray-400 pt-2 pb-1 text-justify">
               Here&apos;s what I&apos;m usually working with these days:
             </div>
+            
             {/* Technologies List */}
             <div className="font-Header tracking-wide flex flex-row space-x-12 md:space-x-16 justify-center lg:justify-start">
               {technologies.map((techGroup, groupIndex) => (
