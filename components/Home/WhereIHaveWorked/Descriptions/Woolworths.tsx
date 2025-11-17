@@ -33,7 +33,7 @@ export default function Woolworths() {
         <div className="flex flex-col spacey-y-2">
           {/* Title */}
           <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
-          Senior Front End Engineer <span className="text-AAsecondary">@ Big WX</span>
+          Senior Engineer - Ful Stack <span className="text-AAsecondary">@ Big WX</span>
           </span>
           {/* Date */}
           <span className="font-mono text-xs text-gray-500">November 2024 - Present</span>
