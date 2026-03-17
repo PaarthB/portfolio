@@ -7,8 +7,8 @@ import { getTasksTextWithHighlightedKeyword } from "./taskAndType"; // Adjust pa
 export default function Everned() {
   const tasks = [
     {
-      text: "Part of a 4 person startup, empowering customers across Australia, effectively acting in the capacity of tech lead",
-      keywords: ["4 person startup", "tech lead"]
+      text: "Part of a 4 person startup, empowering customers across Australia, acting in the capacity of feature lead",
+      keywords: ["4 person startup", "feature lead"]
     },
     {
       text: "Led the development of major customer website revamp and development in React.js, SCSS and C#, using AWS ECS Fargate for serverless computing, achieving timely delivery.",
