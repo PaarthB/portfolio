@@ -10,7 +10,7 @@ export default function Education() {
       </section>
       <section className="max-w-6xl w-full text-gray-300 text-sm sm:text-base leading-7 px-4 md:px-0">
           {/* Surf Life Saving */}
-          <div className="flex items-center justify-end space-y-8">
+          <div className="flex items-center">
             <a href="https://www.surflifesaving.com.au/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-end">
               <img src="/img/sls-nsw.png" alt="SLS" className="bg-[#ffffff] w-16 h-16 mr-8 flex-shrink-0" />
             </a>
@@ -25,7 +25,7 @@ export default function Education() {
 
         <div className="space-y-8">
           {/* Masters Section */}
-          <div className="flex items-center">
+          <div className="flex items-center justify-end">
             <a href="https://www.unsw.edu.au/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-end">
                 <img src="/img/unsw-logo.png" alt="UNSW" className="bg-[#ffffff] w-16 h-16 mr-8 flex-shrink-0" />
             </a>
@@ -39,7 +39,7 @@ export default function Education() {
           </div>
 
           {/* Bachelors Section */}
-          <div className="flex items-center justify-end">
+          <div className="flex items-center">
             <a href="https://www.monash.edu/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-end">
               <img src="/img/monash-university.png" alt="Monash" className="bg-[#ffffff] w-16 h-16 mr-8 flex-shrink-0" />
             </a>
@@ -53,7 +53,7 @@ export default function Education() {
           </div>
 
           {/* TAFE Section */}
-          <div className="flex items-center">
+          <div className="flex items-center justify-end">
             <a href="https://www.everest.edu.au/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-end">
                 <img src="/img/tafe.png" alt="UNSW" className="bg-[#ffffff] w-16 h-16 mr-8 flex-shrink-0" />
             </a>
