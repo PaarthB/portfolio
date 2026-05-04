@@ -2,9 +2,10 @@
 
 import React from "react";
 import ArrowIcon from "../../../Icons/ArrowIcon"; // Adjust path as needed
+import CompanyLogo from "../../../Icons/CompanyLogo";
 import { getTasksTextWithHighlightedKeyword } from "./taskAndType"; // Adjust path
 
-export default function Everned() {
+export default function Evermed() {
   const tasks = [
     {
       text: "Part of a 4 person startup, empowering customers across Australia, acting in the capacity of feature lead",
@@ -27,10 +28,12 @@ export default function Everned() {
   return (
     <div className="flex flex-col space-y-5 max-w-xl px-4 md:px-0">
       <div className="flex flex-col spacey-y-2">
-        {/* Title */}
-        <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
-          Full Stack Engineer <span className="text-AAsecondary">@ Evermed</span>
+        <div className="flex items-center gap-3">
+          <CompanyLogo variant="evermed" className="h-7 w-7 shrink-0" />
+          <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
+            Full Stack Engineer <span className="text-AAsecondary">@ Evermed</span>
           </span>
+        </div>
           {/* Date */}
           <span className="font-mono text-xs text-gray-500">May 2024 - Nov 2024</span>
           <span

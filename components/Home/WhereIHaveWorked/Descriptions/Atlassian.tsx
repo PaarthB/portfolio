@@ -1,5 +1,6 @@
 import React from "react";
 import ArrowIcon from "../../../Icons/ArrowIcon";
+import CompanyLogo from "../../../Icons/CompanyLogo";
 import { getTasksTextWithHighlightedKeyword } from "./taskAndType";
 
 export default function Atlassian() {
@@ -26,10 +27,12 @@ export default function Atlassian() {
   return (
     <div className="flex flex-col space-y-5 max-w-xl px-4 md:px-0">
       <div className="flex flex-col spacey-y-2">
-        {/* Title */}
-        <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
-          Senior Software Engineer - Performance<span className="text-AAsecondary"> @ Atlassian</span>
+        <div className="flex items-center gap-3">
+          <CompanyLogo variant="atlassian" className="h-7 w-7 shrink-0" />
+          <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
+            Senior Software Engineer - Performance <span className="text-AAsecondary">@ Atlassian</span>
           </span>
+        </div>
           {/* Date */}
           <span className="font-mono text-xs text-gray-500">Jan 2019 - Feb 2024</span>
         <span className="font-mono text-xs text-AAsecondary hover:cursor-pointer" style={{ fontSize: "0.6rem" }}

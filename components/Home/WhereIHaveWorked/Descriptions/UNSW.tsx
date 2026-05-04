@@ -1,4 +1,5 @@
 import ArrowIcon from "../../../Icons/ArrowIcon";
+import CompanyLogo from "../../../Icons/CompanyLogo";
 import { getTasksTextWithHighlightedKeyword } from "./taskAndType";
 
 export default function UNSW() {
@@ -16,10 +17,12 @@ export default function UNSW() {
   return (
     <div className="flex flex-col space-y-5 max-w-xl px-4 md:px-0">
       <div className="flex flex-col spacey-y-2">
-        {/* Title */}
-        <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
-          Tutor - COMP6080 (Web Frontend Programming) <span className="text-AAsecondary">@ UNSW</span>
-        </span>
+        <div className="flex items-center gap-3">
+          <CompanyLogo variant="unsw" className="h-7 w-7 shrink-0" />
+          <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
+            Tutor - COMP6080 (Web Frontend Programming) <span className="text-AAsecondary">@ UNSW</span>
+          </span>
+        </div>
         {/* Date */}
         <span className="font-mono text-xs text-gray-500">Feb 2023 - Dec 2023</span>
         <span

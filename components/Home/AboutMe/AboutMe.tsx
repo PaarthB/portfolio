@@ -33,7 +33,9 @@ const AboutMe = forwardRef<HTMLDivElement, AboutMeProps>((props, ref) => {
           {/* Text Content */}
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm">
             <div className="font-Header text-gray-400 text-justify">
-            I am a <span className="text-AAsecondary">UI / Full Stack Engineer</span> who likes to build software or help building it, with the most common to the most special of needs.
+            I am a <span className="text-AAsecondary">UI / Full Stack Engineer</span> by profession, but I am also into <span className="text-AAsecondary">few others things..</span> 
+            
+            <br/><br/>I like to build software, with the most common to the most special of needs.
 
             This unique background allows me to look at systems from a user’s perspective, always looking at what the user might like vs not so much, and how processes can be improved for developers.
 
@@ -42,7 +44,9 @@ const AboutMe = forwardRef<HTMLDivElement, AboutMeProps>((props, ref) => {
             I have worked on multiple initiatives both on personal and professional projects, to improve <span className="text-AAsecondary">developer productivity</span>. I have a keen eye to design <span className="text-AAsecondary">sharp and performant user interfaces</span>, and also <span className="text-AAsecondary">backend apps</span>. I like to think about systems at scale, simplify them and also make them more <span className="text-AAsecondary">performant</span> and <span className="text-AAsecondary">reliable</span>.
 
             I like to sometimes dabble deep into the <span className="text-AAsecondary">Operating system</span>, troubleshooting network layer problems, which also helps me understand why systems behave the way they do.
-            <br/><br/>Outside of this, I enjoy <span className="text-AAsecondary">travelling</span>, playing <span className="text-AAsecondary">basketball</span>, <span className="text-AAsecondary">swimming</span> and <span className="text-AAsecondary">surfing</span>. I am an active <span className="text-AAsecondary">surf life saver</span> and <span className="text-AAsecondary">crew</span>.<br/></div>
+            <br/><br/>Outside of this, I enjoy <span className="text-AAsecondary">travelling</span>, playing <span className="text-AAsecondary">basketball</span>, <span className="text-AAsecondary">swimming</span> and <span className="text-AAsecondary">surfing</span>. I am an active <span className="text-AAsecondary">surf life saver</span> and <span className="text-AAsecondary">crew</span>.<br/>
+            <br/>I love to cook and take pride in my <span className="text-AAsecondary">cooking</span> skills too.
+            </div>
             <div className="font-Header tracking-wide text-gray-400 pt-2 pb-1 text-justify">
               Here&apos;s what I&apos;m usually working with these days:
             </div>
