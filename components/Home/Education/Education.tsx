@@ -5,7 +5,7 @@ export default function Education() {
     <div id="educationSection" data-aos="fade-up" className="flex flex-col items-center justify-center py-24 space-y-12 bg-AAprimary">
       <section className="flex flex-row items-center">
         <span className="text-AAsecondary font-sans text-sm sm:text-xl"> 02.</span>
-        <span className="text-gray-200 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">Education</span>
+        <span className="text-gray-200 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">Background</span>
         <div className="bg-gray-400 h-[0.2px] w-16 sm:w-44 md:w-80"></div>
       </section>
       <section className="max-w-6xl w-full text-gray-300 text-sm sm:text-base leading-7 px-4 md:px-0">
@@ -16,16 +16,16 @@ export default function Education() {
             </a>
             <div className="md:max-w-lg">
               <div className="mb-4">
-                <p className="text-AAsecondary font-mono text-xs uppercase tracking-widest">SLSA, NSW (Sydney, 2025 - Present)</p>
-                <p className="text-white font-semibold text-lg sm:text-xl">Bronze Medallion + Certificate II in Public Safety</p>
-                <p className="text-gray-400 text-sm mt-1">SLSA Bronze Medallion and Certificate II Public Safety (Aquatic Rescue) skills and knowledge related to workplace safety, radio operations, surf awareness, aquatic rescue operations, resuscitation, emergency care, communication, teamwork, spinal management and patrol operations.</p>
+                <p className="text-AAsecondary font-mono text-xs uppercase tracking-widest">SLSA NSW, DEE WHY BEACH (Sydney, 2025 - Present)</p>
+                <p className="text-white font-semibold text-lg sm:text-xl">Bronze Medallion + IRB Crew</p>
+                <p className="text-gray-400 text-sm mt-1"><b><u>SLSA Bronze Medallion</u></b> and <b><u>Certificate II Public Safety (Aquatic Rescue)</u></b> skills and knowledge related to workplace safety, radio operations, surf awareness, aquatic rescue operations, resuscitation, emergency care, communication, teamwork, spinal management and patrol operations.</p>
               </div>
             </div>
           </div>
 
         <div className="space-y-8">
           {/* Masters Section */}
-          <div className="flex items-center justify-end">
+          <div className="flex items-center justify-start md:justify-end">
             <a href="https://www.unsw.edu.au/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-end">
                 <img src="/img/unsw-logo.png" alt="UNSW" className="bg-[#ffffff] w-16 h-16 mr-8 flex-shrink-0" />
             </a>
@@ -53,7 +53,7 @@ export default function Education() {
           </div>
 
           {/* TAFE Section */}
-          <div className="flex items-center justify-end">
+          <div className="flex items-center justify-start md:justify-end">
             <a href="https://www.everest.edu.au/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-end">
                 <img src="/img/tafe.png" alt="UNSW" className="bg-[#ffffff] w-16 h-16 mr-8 flex-shrink-0" />
             </a>

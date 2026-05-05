@@ -1,5 +1,5 @@
 type CompanyLogoProps = {
-  variant: "bigw" | "atlassian" | "evermed" | "odecee" | "unsw";
+  variant: "bigw" | "atlassian" | "evermed" | "odecee" | "unsw" | "rydra";
   className?: string;
 };
 
@@ -35,6 +35,12 @@ export default function CompanyLogo({ variant, className = "" }: CompanyLogoProp
       return (
         <span className={`${baseClasses} bg-[#ffcc00] text-black font-semibold`} aria-label="UNSW logo">
             <img src="/img/unsw.png" alt="UNSW Logo" className="h-7 w-7" />
+        </span>
+      );
+    case "rydra":
+      return (
+        <span className={`${baseClasses} bg-[#ffcc00] text-[#002c6f] font-semibold`} aria-label="Rydra logo">
+          <img src="/img/rydra.jpeg" alt="Rydra" className="h-7 w-7" />
         </span>
       );
     default:
