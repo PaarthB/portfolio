@@ -2,7 +2,8 @@ import React from "react";
 import GithubIcon from "../../Icons/GithubIcon";
 import LinkedinIcon from "../../Icons/LinkedinIcon";
 import InstagramIcon from "../../Icons/InstagramIcon";
-import YoutubeIcon from "../../Icons/YoutubeIcon";
+import BlogIcon from "../../Icons/BlogIcon";
+
 type Props={href:string,Icon:React.FC<{className:string}>}
 const ClickableIcon = (props:Props) => {
   return (
@@ -21,10 +22,10 @@ export default function Fotter(props:{link:string,className:string}) {
       <div className={` ${props.className} bg-AAprimary flex flex-col justify-center items-center py-8 space-y-4 `}>
         {/* // ? Reach me at */}
         <div className="flex flex-row space-x-8">
-          <ClickableIcon
+          {/* <ClickableIcon
             href={"https://github.com/PaarthB"}
             Icon={GithubIcon}
-          />
+          /> */}
           <ClickableIcon
             href={"https://www.linkedin.com/in/paarthbhasin/"}
             Icon={LinkedinIcon}
@@ -32,6 +33,10 @@ export default function Fotter(props:{link:string,className:string}) {
           <ClickableIcon
             href={"https://www.instagram.com/paarthbhasin/"}
             Icon={InstagramIcon}
+          />
+          <ClickableIcon
+            href={"https://www.technopaarth.wordpress.com/"}
+            Icon={BlogIcon}
           />
         </div>
         <a href={props.link} className="" target={"_blank"} rel="noreferrer">

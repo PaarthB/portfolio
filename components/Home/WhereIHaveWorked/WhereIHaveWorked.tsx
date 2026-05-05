@@ -13,6 +13,7 @@ export default function WhereIHaveWorked() {
   // ? INFORMATIONAL control the green position using px,
   // ? INFORMATIONAL the default value of barRef's class should be at the beginning translate-y-[0px]
   const GetDescription = () => {
+    console.log("DescriptionJob", DescriptionJob);
     switch (DescriptionJob) {
       case "Rydra":
         return <Rydra />;
@@ -28,7 +29,7 @@ export default function WhereIHaveWorked() {
         return <UNSW />;
     }
   };
-  const [DescriptionJob, setDescriptionJob] = React.useState("Big WX");
+  const [DescriptionJob, setDescriptionJob] = React.useState("Rydra");
   return (
     <div data-aos="fade-up" className="flex flex-col items-center justify-center py-24 space-y-12 bg-AAprimary">
       {/* // ? Title "Where I've Worked" */}
@@ -58,7 +59,7 @@ export default function WhereIHaveWorked() {
 }
 
 const CompaniesBar = props => {
-  const [barPosition, setBarPosition] = React.useState<Number>(-8); // Green bar position by the default it's -20px
+  const [barPosition, setBarPosition] = React.useState<Number>(-10); // Green bar position by the default it's -20px
   const [barAbovePosition, setBarAbovePosition] = React.useState<Number>(0);
   const [companyNameBackgroundColorGreen, setCompanyNameBackgroundColorGreen] = React.useState<boolean[]>([
     true,

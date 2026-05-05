@@ -4,6 +4,7 @@ import GithubIcon from "../../Icons/GithubIcon";
 import LinkedinIcon from "../../Icons/LinkedinIcon";
 import InstagramIcon from "../../Icons/InstagramIcon";
 import YoutubeIcon from "../../Icons/YoutubeIcon";
+import BlogIcon from "../../Icons/BlogIcon";
 
 const IconClickableWithAnimation = props => {
   return (
@@ -37,6 +38,8 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
             <IconClickableWithAnimation Icon={LinkedinIcon} href={"https://www.linkedin.com/in/paarthbhasin/"} />
             {/* Instagram Icon */}
             <IconClickableWithAnimation Icon={InstagramIcon} href={"https://www.instagram.com/paarthbhasin/"} />
+            {/* Blogging Icon */}
+            <IconClickableWithAnimation Icon={BlogIcon} href={"http://www.technopaarth.wordpress.com"} />
           </div>
           <div className="h-28 w-0.5 bg-gray-400"></div>
         </div>

@@ -3,6 +3,7 @@ import GithubIcon from "../Icons/GithubIcon";
 import LinkedinIcon from "../Icons/LinkedinIcon";
 import InstagramIcon from "../Icons/InstagramIcon";
 import YoutubeIcon from "../Icons/YoutubeIcon";
+import BlogIcon from "../Icons/BlogIcon";
 const ClickableIcon = props => {
   return (
     <a href={props.href} className="" target={"_blank"} rel="noreferrer">
@@ -13,7 +14,8 @@ const ClickableIcon = props => {
 const IconsData = [
   { href: "https://github.com/PaarthB", Icon: GithubIcon },
   { href: "https://www.linkedin.com/in/paarthbhasin/", Icon: LinkedinIcon },
-  { href: "https://www.instagram.com/paarthbhasin/", Icon: InstagramIcon },
+  // { href: "https://www.instagram.com/paarthbhasin/", Icon: InstagramIcon },
+  { href: "https://www.technopaarth.wordpress.com/", Icon: BlogIcon },
 ];
 
 export default function Footer(props: { githubUrl: string; hideSocialsInDesktop: boolean }) {
