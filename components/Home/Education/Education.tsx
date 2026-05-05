@@ -60,7 +60,16 @@ export default function Education() {
             <div className="md:max-w-lg">
               <div className="mb-4">
                 <p className="text-AAsecondary font-mono text-xs uppercase tracking-widest">TAFE - Everest Institute Lalor (2015 - 2016)</p>
-                <p className="text-white font-semibold text-lg sm:text-xl">Certificate III in Commercial Cookery</p>
+                <div className="flex items-center space-x-3">
+                  <p className="text-white font-semibold text-lg sm:text-xl">Certificate III in Commercial Cookery - Portfolio</p>
+                  <a href="https://instagram.com/chef_pb_au" target="_blank" rel="noreferrer" className="text-gray-300 hover:text-AAsecondary transition duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37a4 4 0 1 1-7.75 1.7A4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </a>
+                </div>
                 <p className="text-gray-400 text-sm mt-1">Training as a commercial cook, to use a wide range of cookery skills. Practical training in the preparation and safe-handling of a variety of food types, including meat, seafood, poultry, dairy, and other common allergens.</p>
               </div>
             </div>
