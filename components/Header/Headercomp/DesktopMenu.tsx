@@ -48,7 +48,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
       >
         <ReactScrollLink to="educationSection" spy={true} smooth={true} offset={-300} duration={200}>
           &gt; 02.{" "}
-          <span onClick={() => context.sharedState.portfolio.NavBar.JustClicked = true} className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Education</span>
+          <span onClick={() => context.sharedState.portfolio.NavBar.JustClicked = true} className="text-white  hover:cursor-pointer hover:text-AAsecondary duration-300">Background</span>
         </ReactScrollLink>
       </motion.div>
       <motion.div
