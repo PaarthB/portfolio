@@ -1,7 +1,7 @@
 export default function BlogIcon(props) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" 
-        viewBox="50 50 520 500"
+        viewBox="50 50 515 515"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         aria-hidden="true"
         role="img"
