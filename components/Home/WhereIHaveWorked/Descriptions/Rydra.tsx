@@ -17,7 +17,7 @@ export default function Atlassian() {
         <div className="flex items-center gap-3">
           <CompanyLogo variant="rydra" className="h-7 w-7 shrink-0" />
           <span className="text-gray-100 sm:text-lg text-sm font-Arimo tracking-wide">
-            Co-founder/CTO <span className="text-AAsecondary">@ Rdyra</span>
+            Co-founder/CTO <span className="text-AAsecondary">@ Rydra</span>
           </span>
         </div>
           {/* Date */}
