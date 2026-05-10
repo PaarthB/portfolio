@@ -12,7 +12,7 @@ export default function Education() {
           {/* Surf Life Saving */}
           <div className="flex items-center">
             <a href="https://www.surflifesaving.com.au/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-end">
-              <img src="/img/sls-nsw.png" alt="SLS" className="bg-[#ffffff] w-16 h-16 mr-8 flex-shrink-0" />
+              <img src="/img/sls-nsw.png" alt="SLS" className="w-16 h-16 mr-8 flex-shrink-0" />
             </a>
             <div className="md:max-w-lg">
               <div className="mb-4">
@@ -27,12 +27,12 @@ export default function Education() {
           {/* Masters Section */}
           <div className="flex items-center justify-start md:justify-end">
             <a href="https://www.unsw.edu.au/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-end">
-                <img src="/img/unsw-logo.png" alt="UNSW" className="bg-[#ffffff] w-16 h-16 mr-8 flex-shrink-0" />
+                <img src="/img/unsw-logo.svg" alt="UNSW" className="bg-[#ffffff] w-16 h-16 mr-8 flex-shrink-0" />
             </a>
             <div className="md:max-w-lg">
               <div className="mb-4">
                 <p className="text-AAsecondary font-mono text-xs uppercase tracking-widest">Masters - University of NSW (Sydney, 2019 - 2022)</p>
-                <p className="text-white font-semibold text-lg sm:text-xl">Master of Computer Engineering</p>
+                <p className="text-white font-semibold text-lg sm:text-xl">Master of Advanced Computing</p>
                 <p className="text-gray-400 text-sm mt-1">Advanced coursework in software engineering, data systems, networks, machine learning and security.</p>
               </div>
             </div>
