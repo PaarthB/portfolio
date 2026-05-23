@@ -58,7 +58,7 @@ const MyName: React.FC<MyNameProps> = props => {
         }}
         className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
       >
-        I&apos;m a <span className="text-AAsecondary keyword-hover">Full Stack UI / Software Engineer</span> with strong{" "}
+        I&apos;m a <span className="text-AAsecondary keyword-hover">Full Stack / Systems Software Engineer</span> with strong{" "}
         <span className="text-AAsecondary keyword-hover">problem-solving skills</span>, specializing in creating
         exceptional digital experiences. With a rare combination of skills in{" "}
         <span className="text-AAsecondary keyword-hover">DevOps / SRE</span>,{' '}

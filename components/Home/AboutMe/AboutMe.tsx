@@ -33,7 +33,7 @@ const AboutMe = forwardRef<HTMLDivElement, AboutMeProps>((props, ref) => {
           {/* Text Content */}
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm">
             <div className="font-Header text-gray-400 text-justify">
-            I am a <span className="text-AAsecondary">UI / Full Stack Engineer</span> by profession, but I am also into <span className="text-AAsecondary">few others things..</span> 
+            I am a <span className="text-AAsecondary">Systems / Full Stack Engineer</span> by profession, but I am also into <span className="text-AAsecondary">few others things..</span> 
             
             <br/><br/>I like to build software, with the most common to the most special of needs.
 
