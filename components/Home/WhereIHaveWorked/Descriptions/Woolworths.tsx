@@ -6,7 +6,7 @@ import CompanyLogo from "../../../Icons/CompanyLogo";
 export default function Woolworths() {
   const tasks = [
     {
-      text: "E-commerce feature design and development, responsible for the order checkout, rewards/discounts, campaigns and loyalty card features on the website as well as the back-end. This is used by thousands of customers on a daily basis",
+      text: "E-commerce feature design and development, responsible for the order checkout, rewards/discounts, campaigns and loyalty card features on the website as well as the back-end. This is used by 1M+ customers on a weekly basis",
       keywords: ["E-commerce", "design", "development", "daily basis"],
     },
     {
