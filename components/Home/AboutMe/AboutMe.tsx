@@ -45,7 +45,7 @@ const AboutMe = forwardRef<HTMLDivElement, AboutMeProps>((props, ref) => {
 
             I like to sometimes dabble deep into the <span className="text-AAsecondary">Operating system</span>, troubleshooting network layer problems, which also helps me understand why systems behave the way they do.
             <br/><br/>Outside of this, I enjoy <span className="text-AAsecondary">travelling</span>, playing <span className="text-AAsecondary">basketball</span>, <span className="text-AAsecondary">swimming</span> and <span className="text-AAsecondary">surfing</span>. I am an active <span className="text-AAsecondary">surf life saver</span> and <span className="text-AAsecondary">crew</span>.<br/>
-            <br/>I love to cook and take pride in my <span className="text-AAsecondary">cooking</span> skills too.
+            <br/>I love to cook and take pride in my <span className="text-AAsecondary">culinary</span> skills too.
             </div>
             <div className="font-Header tracking-wide text-gray-400 pt-2 pb-1 text-justify">
               Here&apos;s what I&apos;m usually working with these days:
