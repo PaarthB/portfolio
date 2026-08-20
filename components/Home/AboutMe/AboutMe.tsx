@@ -71,7 +71,7 @@ const AboutMe = forwardRef<HTMLDivElement, AboutMeProps>((props, ref) => {
             <div className="group relative lg:w-96 lg:h-96 md:w-72 md:h-72 md:block hidden">
               <div className="group-hover:translate-x-3 group-hover:translate-y-3 duration-300 absolute w-5/6 h-5/6 border-2 border-AAsecondary translate-x-5 translate-y-5 rounded"></div>
               <div className="absolute w-5/6 h-5/6 rounded overflow-hidden">
-                <div className="absolute w-full h-full group-hover:opacity-0 bg-AAsecondary opacity-0 duration-300 rounded overflow-hidden"></div>
+                <div className="absolute w-full h-full group-hover:opacity-0 bg-AAsecondary opacity-20 duration-300 rounded overflow-hidden"></div>
                 <Img
                   src={"/img/me-2.jpg"}
                   className={"object-contain rounded-lg"}
