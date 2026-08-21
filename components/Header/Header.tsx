@@ -17,6 +17,7 @@ const Header = (props: { finishedLoading: boolean,sectionsRef }) => {
   const context = useContext(AppContext);
   const scrollSizeY=useRef<number>(0);
   const currentYAfterClick = useRef<number | undefined>(undefined)
+  const isHovering = useRef<boolean>(false);
 
   // Define the EventListener for the NavBar
   useEffect(() => {
@@ -27,7 +28,7 @@ const Header = (props: { finishedLoading: boolean,sectionsRef }) => {
           scrollSizeY.current = window.scrollY;
         } else {
           if (window.scrollY > 50 && scrollSizeY.current !== window.scrollY) {
-            if (window.scrollY > scrollSizeY.current) {
+            if (window.scrollY > scrollSizeY.current && !isHovering.current) {
               if (RefNavBar) {
                 RefNavBar.current?.classList.remove("translate-y-0");
                 RefNavBar.current?.classList.add("-translate-y-full");
@@ -84,6 +85,19 @@ const Header = (props: { finishedLoading: boolean,sectionsRef }) => {
     <>
       {/* Mobile visible Navbar component, controlling ShowElement state to hide itself and rotate itself */}
       <MobileMenu rotate={rotate} setRotate={setRotate} setShowElement={setShowElement} ShowElement={ShowElement} />
+      {/* Thin fixed strip at the very top of the viewport: stays in place even when the header itself
+      is translated off-screen, so hovering near the top edge can still reveal a hidden header. */}
+      <div
+        className="w-full fixed top-0 left-0 h-20 z-30"
+        onMouseEnter={() => {
+          isHovering.current = true;
+          RefNavBar.current?.classList.remove("-translate-y-full");
+          RefNavBar.current?.classList.add("translate-y-0");
+        }}
+        onMouseLeave={() => {
+          isHovering.current = false;
+        }}
+      />
       {/* This parent element for Menu */}
       <motion.div
         ref={RefNavBar}
@@ -91,8 +105,16 @@ const Header = (props: { finishedLoading: boolean,sectionsRef }) => {
         animate={{ opacity: 1 }}
         // changed from 10.4 to 1
         transition={{ opacity: { delay: props.finishedLoading ? 0 : 9.4, duration: 0 } }}
-        className={`w-full fixed ${ShowElement ? `bg-opacity-70 shadow-xl` : `bg-opacity-0 `} bg-AAprimary flex 
+        className={`w-full fixed ${ShowElement ? `bg-opacity-70 shadow-xl` : `bg-opacity-0 `} bg-AAprimary flex
       justify-between px-6 sm:px-12 py-2 sm:py-4  transition duration-4000 translate-y-0 z-20`}
+        onMouseEnter={() => {
+          isHovering.current = true;
+          RefNavBar.current?.classList.remove("-translate-y-full");
+          RefNavBar.current?.classList.add("translate-y-0");
+        }}
+        onMouseLeave={() => {
+          isHovering.current = false;
+        }}
       >
         {/* Logo A */}
         <Logo finishedLoading={props.finishedLoading} />
