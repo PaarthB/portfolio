@@ -41,7 +41,7 @@ export default function Education() {
           {/* Bachelors Section */}
           <div className="flex items-center">
             <a href="https://www.monash.edu/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-end">
-              <img src="/img/monash-university.png" alt="Monash" className="bg-[#ffffff] w-16 h-16 mr-8 flex-shrink-0" />
+              <img src="/img/monash.png" alt="Monash" className="bg-[#ffffff] w-16 h-16 mr-8 flex-shrink-0" />
             </a>
             <div className="md:max-w-lg">
               <div className="mb-4">
