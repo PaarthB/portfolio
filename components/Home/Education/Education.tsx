@@ -27,7 +27,7 @@ export default function Education() {
           {/* Masters Section */}
           <div className="flex items-center justify-start md:justify-end">
             <a href="https://www.unsw.edu.au/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-end">
-                <img src="/img/unsw-logo.png" alt="UNSW" className="bg-[#ffffff] w-16 h-16 mr-8 flex-shrink-0" />
+                <img src="/img/unsw-gray.jpeg" alt="UNSW" className="bg-[#ffffff] w-16 h-16 mr-8 flex-shrink-0" />
             </a>
             <div className="md:max-w-lg">
               <div className="mb-4">
