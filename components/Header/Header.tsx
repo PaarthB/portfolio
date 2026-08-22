@@ -17,7 +17,7 @@ const Header = (props: { finishedLoading: boolean,sectionsRef }) => {
   const context = useContext(AppContext);
   const scrollSizeY=useRef<number>(0);
   const currentYAfterClick = useRef<number | undefined>(undefined)
-  const isHovering = useRef<boolean>(false);
+  const [isNavHidden, setIsNavHidden] = useState(false);
 
   // Define the EventListener for the NavBar
   useEffect(() => {
@@ -28,14 +28,16 @@ const Header = (props: { finishedLoading: boolean,sectionsRef }) => {
           scrollSizeY.current = window.scrollY;
         } else {
           if (window.scrollY > 50 && scrollSizeY.current !== window.scrollY) {
-            if (window.scrollY > scrollSizeY.current && !isHovering.current) {
+            if (window.scrollY > scrollSizeY.current) {
               if (RefNavBar) {
                 RefNavBar.current?.classList.remove("translate-y-0");
                 RefNavBar.current?.classList.add("-translate-y-full");
               }
+              setIsNavHidden(true);
             } else {
               RefNavBar.current?.classList.add("translate-y-0");
               RefNavBar.current?.classList.remove("-translate-y-full");
+              setIsNavHidden(false);
             }
             scrollSizeY.current = window.scrollY;
           }
@@ -59,6 +61,7 @@ const Header = (props: { finishedLoading: boolean,sectionsRef }) => {
           if (context.sharedState.portfolio.NavBar.JustClicked) {
             RefNavBar.current?.classList.add("translate-y-0");
             RefNavBar.current?.classList.remove("-translate-y-full");
+            setIsNavHidden(false);
             context.sharedState.portfolio.NavBar.JustClicked = false
           }
           // You can access event details via the 'event' object if needed
@@ -86,16 +89,15 @@ const Header = (props: { finishedLoading: boolean,sectionsRef }) => {
       {/* Mobile visible Navbar component, controlling ShowElement state to hide itself and rotate itself */}
       <MobileMenu rotate={rotate} setRotate={setRotate} setShowElement={setShowElement} ShowElement={ShowElement} />
       {/* Thin fixed strip at the very top of the viewport: stays in place even when the header itself
-      is translated off-screen, so hovering near the top edge can still reveal a hidden header. */}
+      is translated off-screen, so hovering near the top edge can still reveal a hidden header.
+      pointer-events only turn on while the header is actually hidden (isNavHidden), so it never
+      sits on top of the header's own buttons while the header is visible. */}
       <div
-        className="w-full fixed top-0 left-0 h-20 z-30"
+        className={`w-full fixed top-0 left-0 h-20 z-30 ${isNavHidden ? "pointer-events-auto" : "pointer-events-none"}`}
         onMouseEnter={() => {
-          isHovering.current = true;
           RefNavBar.current?.classList.remove("-translate-y-full");
           RefNavBar.current?.classList.add("translate-y-0");
-        }}
-        onMouseLeave={() => {
-          isHovering.current = false;
+          setIsNavHidden(false);
         }}
       />
       {/* This parent element for Menu */}
@@ -108,12 +110,9 @@ const Header = (props: { finishedLoading: boolean,sectionsRef }) => {
         className={`w-full fixed ${ShowElement ? `bg-opacity-70 shadow-xl` : `bg-opacity-0 `} bg-AAprimary flex
       justify-between px-6 sm:px-12 py-2 sm:py-4  transition duration-4000 translate-y-0 z-20`}
         onMouseEnter={() => {
-          isHovering.current = true;
           RefNavBar.current?.classList.remove("-translate-y-full");
           RefNavBar.current?.classList.add("translate-y-0");
-        }}
-        onMouseLeave={() => {
-          isHovering.current = false;
+          setIsNavHidden(false);
         }}
       >
         {/* Logo A */}

@@ -8,7 +8,7 @@ export default function Atlassian() {
     {
       text: "Designed and developed a UI as a 20% improvement project, used for monitoring, tracing & management of deployments for cypress UI tests, using GraphQL" +
       "(using Graphene based Python GraphQL server), React Relay & TypeScript. It is used by 50+ engineering teams on a daily basis.",
-      keywords: ["UI", "cypress UI tests", "GraphQL", "Graphene", "Python", "TypeScipt", "React Relay"],
+      keywords: ["UI", "cypress UI tests", "GraphQL", "Graphene", "Python", "TypeScript", "React Relay"],
     },
     {
       text: "Worked extensively with Java, Postgres, Algorithms, AWS Kinesis data storage, Splunk, SignalFx to optimize system performance, achieving a 50% improvement in Jira epics page latency.",
