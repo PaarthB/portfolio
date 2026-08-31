@@ -94,9 +94,9 @@ const AboutMe = forwardRef<HTMLDivElement, AboutMeProps>((props, ref) => {
           <div className="block">
             <div className="relative w-full h-48 md:hidden flex justify-center items-center">
               <div className="absolute w-48 h-full rounded translate-x-5 translate-y-5 border-2 border-AAsecondary"></div>
-              <div className="absolute w-48 h-full rounded overflow-hidden">
+              <div className="block absolute w-48 h-full rounded overflow-hidden">
                 <Img
-                  src={"/img/me-2.png"}
+                  src={"/img/me-2.jpg"}
                   className={"object-contain rounded-lg"}
                   alt="My Image Not Found"
                 />
