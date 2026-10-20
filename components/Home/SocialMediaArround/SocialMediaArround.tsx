@@ -63,9 +63,9 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
             }}
             className=""
           >
-            <a href="mailto:paarthbhasin3@gmail.com" target={"_blank"} rel="noreferrer">
+            <a href="mailto:paarthbhasin4@gmail.com" target={"_blank"} rel="noreferrer">
               <span className=" font-Header tracking-wider text-gray-400 hover:text-AAsecondary hover:cursor-pointer">
-                paarthbhasin3<span className="text-AAsecondary">@</span>gmail<span className="text-AAsecondary">.</span>com
+                paarthbhasin4<span className="text-AAsecondary">@</span>gmail<span className="text-AAsecondary">.</span>com
               </span>
             </a>
           </motion.div>

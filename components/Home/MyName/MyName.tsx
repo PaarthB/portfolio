@@ -46,7 +46,7 @@ const MyName: React.FC<MyNameProps> = props => {
         }}
         className="text-gray-400 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
       >
-        I turn ideas into reality with precision.
+        I turn complex technical problems into production-ready products.
       </motion.h2>
 
       <motion.h3
@@ -58,12 +58,11 @@ const MyName: React.FC<MyNameProps> = props => {
         }}
         className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
       >
-        I&apos;m a <span className="text-AAsecondary keyword-hover">Full Stack / Systems Software Engineer</span> with strong{" "}
-        <span className="text-AAsecondary keyword-hover">problem-solving skills</span>, specializing in creating
-        exceptional digital experiences. With a rare combination of skills in{" "}
-        <span className="text-AAsecondary keyword-hover">DevOps / SRE</span>,{' '}
-        <span className="text-AAsecondary keyword-hover">Backend & Frontend</span>,{' '}
-        <span className="text-AAsecondary keyword-hover">UX/UI</span> and <span className="text-AAsecondary keyword-hover">Mathematics</span>{' '}
+        I&apos;m a <span className="text-AAsecondary keyword-hover">customer-first</span> and <span className="text-AAsecondary keyword-hover">product-centric</span>
+        {" "}Software Engineer, with strong <span className="text-AAsecondary keyword-hover">problem-solving skills</span>, specializing in creating
+        exceptional digital experiences. 
+        <br/><br/>With a rare ability to switch between <span className="text-AAsecondary keyword-hover">technical</span> and <span className="text-AAsecondary keyword-hover">business</span> perspectives with ease, articulating complex technical concepts to critical business stakeholders,  
+        I bring the joy of solving <span className="text-AAsecondary keyword-hover">business problems</span> with <span className="text-AAsecondary keyword-hover">engineering solutions</span>, to life.
       </motion.h3>
       <motion.div
         initial={{ y: 10, opacity: 0 }}

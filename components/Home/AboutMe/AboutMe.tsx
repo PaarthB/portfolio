@@ -9,8 +9,8 @@ interface AboutMeProps {
 
 const AboutMe = forwardRef<HTMLDivElement, AboutMeProps>((props, ref) => {
   const technologies = [
-    ["Next.js/React", "TypeScript/JavaScript", "Tailwind CSS", "Azure DevOps", "AWS/Azure"],
-    ["Node.js", "C#/.NET", "Python", "Observability", "Figma"],
+    ["Next.js/React", "TypeScript/JavaScript", "Tailwind CSS", "Azure DevOps", "AWS/Azure", "Claude", "LangChain", "OpenAI"],
+    ["Node.js", "C#/.NET", "Python", "Observability", "Figma", "Docker/Kubernetes", "PostgreSQL", "MongoDB"],
   ];
 
   return (
@@ -33,7 +33,16 @@ const AboutMe = forwardRef<HTMLDivElement, AboutMeProps>((props, ref) => {
           {/* Text Content */}
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm">
             <div className="font-Header text-gray-400 text-justify">
-            I am a <span className="text-AAsecondary">Systems / Full Stack Engineer</span> by profession, but I am also into <span className="text-AAsecondary">few others things..</span> 
+            I work at the intersection of <span className="text-AAsecondary">software systems</span>, <span className="text-AAsecondary">product engineering</span> and <span className="text-AAsecondary">reliability</span>.
+
+            <br/><br/>At <span className="text-AAsecondary">Atlassian</span>, I worked on making Jira faster and more resilient, from database failover and event-driven processing to observability and internal developer tooling.
+
+            <br/><br/>Since then, I&apos;ve moved closer to the product and its users: building e-commerce and payment experiences at <span className="text-AAsecondary">Woolworths</span>, working across the stack in a small startup, and integrating LLM capabilities into an AI-powered geospatial application.
+
+            <br/><br/>I enjoy problems that don&apos;t fit neatly into one layer of the stack. I like understanding what users need, figuring out how the underlying systems should behave, and taking a solution through implementation, testing and production.
+
+            <br/><br/>My focus is on building software that is useful to people, robust under <span className="text-AAsecondary">real-world conditions</span>, and measurable once it ships.
+            {/* I am a <span className="text-AAsecondary">Systems / Full Stack Engineer</span> by profession, but I am also into <span className="text-AAsecondary">few others things..</span> 
             
             <br/><br/>I like to build software, with the most common to the most special of needs.
 
@@ -45,7 +54,7 @@ const AboutMe = forwardRef<HTMLDivElement, AboutMeProps>((props, ref) => {
 
             I like to sometimes dabble deep into the <span className="text-AAsecondary">Operating system</span>, troubleshooting network layer problems, which also helps me understand why systems behave the way they do.
             <br/><br/>Outside of this, I enjoy <span className="text-AAsecondary">travelling</span>, playing <span className="text-AAsecondary">basketball</span>, <span className="text-AAsecondary">swimming</span> and <span className="text-AAsecondary">surfing</span>. I am an active <span className="text-AAsecondary">surf life saver</span> and <span className="text-AAsecondary">crew</span>.<br/>
-            <br/>I love to cook and take pride in my <span className="text-AAsecondary">culinary</span> skills too.
+            <br/>I love to cook and take pride in my <span className="text-AAsecondary">culinary</span> skills too. */}
             </div>
             <div className="font-Header tracking-wide text-gray-400 pt-2 pb-1 text-justify">
               Here&apos;s what I&apos;m usually working with these days:

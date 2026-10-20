@@ -6,7 +6,7 @@ import { getTasksTextWithHighlightedKeyword } from "./taskAndType";
 export default function Atlassian() {
   const tasks = [
     {
-      text: "Developing the next generation of ordering and delivery systems providng real-time insights to businesses",
+      text: "Developing the next generation of intelligent ordering and delivery systems providng real-time insights to businesses",
       keywords: ["UI", "cypress UI tests", "GraphQL", "Graphene", "Python", "TypeScipt", "React Relay"],
     },
   ];

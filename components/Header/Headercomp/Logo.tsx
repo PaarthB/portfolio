@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
 export default function Logo(props: { finishedLoading: boolean }) {
   return (
     <div className="flex items-center justify-center space-x-3">
